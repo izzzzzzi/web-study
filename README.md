@@ -74,3 +74,38 @@ app.METHOD(PATH, HANDLER);
 ### 4. postman
 
 - API 테스팅 도구
+
+### Express Router
+
+- 라우팅이란? 사용자 요청에 따라 응답 결과를 다르게 전달하는 것
+  - js 파일 만들어 작성하고
+  - 파일을 분리해서 관리함
+    -> 읽기 쉽고, 유지 보수 쉽게 관리함
+
+```js
+const express = require('express');
+const router = express.Router();
+```
+
+```js
+app.get('/', (req, res) => {
+	//
+});
+```
+
+```js
+app.get('/user', (req, res) => {
+	//
+});
+```
+
+- 라우팅 설정에 따라 등록된 콜백함수를 실햄
+- 요청 메소드와 주소별로 분기 처리함
+  -> 코드가 복잡함
+  -> 라우터를 분리함 (Express 사용 이유)
+
+```
+$ express {file name}
+```
+
+- express generator
