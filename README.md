@@ -35,3 +35,18 @@ $ npm {script명}
 ```
 
 - package.json 내에 있는 스크립트를 실행
+
+### 3. Express
+
+- 웹 애플리케이션 개발할 때 사용하는 외부 모듈
+- http 모듈에 비해 많은 기능
+- 뷰 템플릿(pug, ejs) 지원
+  - 동적 웹 페이지 파일
+
+```
+$ npm install express --save
+```
+
+### 4. postman
+
+- API 테스팅 도구
