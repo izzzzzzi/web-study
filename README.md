@@ -47,6 +47,30 @@ $ npm {script명}
 $ npm install express --save
 ```
 
+#### HTTP 메소드
+
+- Express 내장 객체
+
+  - get : GET 방식 요청 콜백 등록
+  - post : POST 방식 요청 콜백 등록
+  - put : PUT 방식 요청 콜백 등록
+  - delete : DELETE 방식 요청 콜백 등록
+  - all : 모든 요청 방식을 처리하는 콜백 등록
+
+- 기본 라우팅
+
+```js
+app.METHOD(PATH, HANDLER);
+```
+
+- 응답 객체
+  - send() : 전송된 데이터에 따라 알맞은 형식으로 바꾸어 전송
+  - download() : 해당 파일을 다운로드
+  - redirect() : 해당 경로로 강제 이동
+  - json() : JSON 형태로 데이터를 응답
+  - render() : 뷰 템플릿 엔진을 HTML로 렌더링
+  - status() : 상태 코드를 바꿔줄 때 사용
+
 ### 4. postman
 
 - API 테스팅 도구
